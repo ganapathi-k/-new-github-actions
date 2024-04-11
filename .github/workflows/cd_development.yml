@@ -15,7 +15,7 @@ jobs:
     environment: Development
     steps:
       - name: echo
-        run: echo 'Deploying to the ${{ vars.ENV }}'
+        run: echo 'Deploying to the environment called ${{ vars.ENV }}'
 
       - name: Check out code
         uses: actions/checkout@v4
